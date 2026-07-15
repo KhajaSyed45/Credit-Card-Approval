@@ -106,26 +106,24 @@ Deployment
 IBM Watson Machine Learning (Optional)
 Flask Web Application
 
-📂 Project Structure
-CreditCardApprovalPrediction/
-│
-├── dataset/
-│   └── credit_card.csv
-│
-├── model/
-│   └── model.pkl
-│
+## 📂 Project Directory Structure
+
+The project workspace is organized as follows:
+
+```text
+credit_card_project/
+├── data/
+│   ├── application_record.csv   # Applicant demographic data
+│   └── credit_record.csv        # Monthly payment history logs
+├── models/
+│   └── card_model.joblib        # Serialized winning model weights
 ├── templates/
-│   ├── index.html
-│   └── result.html
-│
+│   └── index.html               # Frontend HTML form UI
 ├── static/
-│   └── style.css
-│
-├── app.py
-├── train_model.py
-├── requirements.txt
-└── README.md
+│   ├── style.css                # Interface styling
+│   └── script.js                # Asynchronous API frontend logic
+├── notebook.ipynb               # Jupyter Notebook for EDA & prototyping
+└── app.py                       # Flask web server backend
 
 ## 2. Install dependencies
 
