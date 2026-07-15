@@ -1,9 +1,9 @@
 Flask
 pandas
 numpy
-scikit-learn=
+scikit-learn
 matplotlib
-seaborn=
+seaborn
 xgboost
 joblib
 gunicorn
