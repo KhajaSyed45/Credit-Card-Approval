@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Approval Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="site-nav">
+        <div class="nav-brand">Credit Approval</div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="{{ url_for('predict_page') }}">Predict</a></li>
+            <li><a href="{{ url_for('history') }}">History</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="hero-card">
+            <div>
+                <p class="eyebrow">Credit assessment</p>
+                <h1>Smart credit approval prediction for every application.</h1>
+                <p class="hero-copy">Use machine learning to estimate the approval likelihood of a credit card applicant based on income, employment, credit history, and financial health.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="{{ url_for('predict_page') }}">Run a prediction</a>
+                    <a class="button button-secondary" href="#about">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-summary">
+                <div class="summary-item">
+                    <h3>Fast evaluation</h3>
+                    <p>Enter applicant details and get a decision-support output instantly.</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Trustworthy inputs</h3>
+                    <p>Leverage income, employment, housing, and credit history data for quality predictions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-grid" id="about">
+            <article class="feature-card">
+                <h2>Approval recommendation</h2>
+                <p>Submit applicant details to receive an approval or rejection recommendation powered by a trained model.</p>
+            </article>
+            <article class="feature-card">
+                <h2>Application readiness</h2>
+                <p>See whether the current applicant profile is likely to meet approval criteria before you decide.</p>
+            </article>
+            <article class="feature-card">
+                <h2>Research & planning</h2>
+                <p>Use this tool to compare applicant scenarios and support smarter credit decisions.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div>
+                <p class="footer-brand">Credit Approval</p>
+                <p class="footer-copy">Smart credit decision support using Flask and scikit-learn.</p>
+            </div>
+            <div class="footer-meta">
+                <div>
+                    <p class="footer-label">Developed By</p>
+                    <p>SYED MOHAMMAD KHAJA</p>
+                </div>
+                <div>
+                    <p class="footer-label">Institution</p>
+                    <p>Anantha Lakshmi Institute of Technology and Sciences</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Credit Approval. All Rights Reserved.</div>
+    </footer>
+</body>
+</html>
